@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/project-1.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="home.html"><img id="logo" src="images/logo.png" height="60px" alt="logo"></a>
+      <ul class="menu">
+          <li class="dropdown">
+              <a href="aboutUs.html">About Us</a>
+              <div class="dropdown-content">
+                <a class="dropdownItem" href="history.html" >History</a>
+                <a class="dropdownItem" href="staff.html" >Staff</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="mission.html">Missions</a>
+          </li>
+          <li class="dropdown">
+            <a href="product.html" >Products</a>
+            <div class="dropdown-content">
+              <a class="dropdownItem" href="books.html" >Books</a>
+              <a class="dropdownItem" href="goodies.html" >Goodies</a>
+              <a class="dropdownItem" href="figurines.html">Figurines</a>
+            </div>
+          </li>
+          <li class="dropdown">
+              <a href="news.html">News</a>
+              <div class="dropdown-content">
+                <a class="dropdownItem" href="events.html" >Events</a>
+                <a class="dropdownItem" href="gallery.html" >Photo Gallery</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="contact.html">Contact</a>
+          </li>
+      </ul>
+    </nav>
+    <h2> Contact Us</h2>
+
+    <form target="my-iframe" action="http://vip.groupehn.com:20003/html/infospost.php" method="post" onsubmit="this.style.display='none'"> 
+      
+        <label  for="fname">Last Name</label>
+        <input id="lastname" type="text" name="lastname"  placeholder="Your last name..">
+
+        <label  for="fname">First Name</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Your first name..">
+      
+        <label for="lname">Email</label>
+        <input id="mail" type="email" name="email" placeholder="yourmail@yahoo.com">
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="Argentina">Argentina</option>
+          <option value="Canada">Canada</option>
+          <option value="France">France</option>
+          <option value="Japan">Japan</option>
+          <option value="UK">UK</option>
+          <option value="USA">USA</option>
+          <option value="Spain">Spain</option>
+          <option value="Sweden">Sweden</option>
+
+      
+        <label class="desc" id="title4" for="Field4">
+          Message
+        </label>
+        <textarea id="subject" name="request" id="request" cols="66" rows="10"placeholder="Write something.."></textarea>
+     
+        <input id="saveForm" name="saveForm" type="submit" value="Submit">
+      
+    </form>
+
+    <iframe name="my-iframe" src="" height="500" style="border:none;"></iframe>
+    
+    <footer>Copyright 2021<br></footer>
+
+  </body>
+</html>
